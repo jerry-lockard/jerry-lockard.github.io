@@ -4,117 +4,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Developer Profile - @Lexington-KY-40507</title>
+    <title>Jerry Lockard - Developer Profile</title>
     
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
     <!-- Custom CSS for additional styling -->
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Roboto', sans-serif;
             line-height: 1.6;
             padding-top: 56px;
+            color: #333;
         }
 
         /* Styling for the main header */
         .header-section {
-            background: #343a40;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 100px 0;
+            padding: 120px 0;
             text-align: center;
         }
 
         .header-section h1 {
             font-size: 3.5rem;
             font-weight: 700;
+            margin-bottom: 20px;
         }
 
         .header-section p {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             margin-top: 10px;
         }
 
         /* Profile image styling */
         .profile-img {
-            width: 150px;
+            width: 180px;
             border-radius: 50%;
-            margin-bottom: 20px;
-            border: 4px solid #fff;
+            margin-bottom: 30px;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Section styling */
+        section {
+            padding: 80px 0;
+        }
+
+        section h2 {
+            font-size: 2.8rem;
+            margin-bottom: 50px;
+            text-align: center;
+            color: #333;
         }
 
         /* About section */
         #about {
-            padding: 60px 0;
-        }
-
-        #about h2 {
-            font-size: 2.5rem;
-            margin-bottom: 40px;
-            text-align: center;
+            background-color: #f9f9f9;
         }
 
         #about p {
-            text-align: center;
             font-size: 1.1rem;
+            line-height: 1.8;
         }
 
         /* Personal Life section */
         #personal-life {
-            background: #f8f9fa;
-            padding: 60px 0;
+            background-color: #ffffff;
         }
 
-        #personal-life h2 {
-            font-size: 2.5rem;
-            margin-bottom: 40px;
-            text-align: center;
+        #personal-life ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        #personal-life li {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
         }
 
         /* Coding and Projects section */
         #projects {
-            padding: 60px 0;
+            background-color: #f9f9f9;
         }
 
-        #projects h2 {
-            font-size: 2.5rem;
-            margin-bottom: 40px;
-            text-align: center;
+        .project-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card h3 {
+            color: #4a4a4a;
+            margin-bottom: 15px;
         }
 
         /* Future Aspirations section */
         #aspirations {
-            background: #f8f9fa;
-            padding: 60px 0;
-        }
-
-        #aspirations h2 {
-            font-size: 2.5rem;
-            margin-bottom: 40px;
-            text-align: center;
-        }
-
-        #aspirations p {
-            text-align: center;
-            font-size: 1.1rem;
+            background-color: #ffffff;
         }
 
         /* Contact section */
         #contact {
-            padding: 60px 0;
+            background-color: #f9f9f9;
         }
 
-        #contact h2 {
-            font-size: 2.5rem;
-            margin-bottom: 40px;
-            text-align: center;
+        .contact-btn {
+            font-size: 1.1rem;
+            padding: 10px 30px;
+            margin-top: 20px;
         }
 
+        /* Footer styling */
         .footer {
-            background: #343a40;
-            color: white;
-            padding: 20px 0;
+            background: #333;
+            color: #fff;
+            padding: 30px 0;
             text-align: center;
+        }
+
+        .social-icons {
+            margin-bottom: 20px;
+        }
+
+        .social-icons a {
+            color: #fff;
+            font-size: 24px;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #764ba2;
         }
     </style>
 </head>
@@ -122,7 +153,6 @@
 <body>
 
     <!-- Navbar Section -->
-    <!-- Fixed-top navbar that collapses on smaller screens -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">Jerry Lockard</a>
@@ -134,8 +164,8 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#personal-life">Personal Life</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Coding & Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#aspirations">Future Aspirations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#aspirations">Aspirations</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -143,10 +173,9 @@
     </nav>
 
     <!-- Header Section -->
-    <!-- A jumbotron with a dark background, profile image, and introduction text -->
     <header class="header-section">
         <div class="container text-center">
-            <img src="profile-picture.jpg" alt="Profile Picture" class="profile-img">
+            <img src="profile-picture.jpg" alt="Jerry Lockard" class="profile-img">
             <h1>Jerry Lockard</h1>
             <p>Dedicated Coder | Political Science Student | Aspiring Politician</p>
         </div>
@@ -156,7 +185,13 @@
     <section id="about">
         <div class="container">
             <h2>About Me</h2>
-            <p>👋 <strong>Hello</strong>, I’m <strong>Jerry Lockard</strong> – a dedicated coder, political science student, and aspiring politician based in <em>Lexington, KY</em>. Currently, I’m working as a substitute teacher for FCPS and pursuing a Bachelor's degree in Political Science at <a href="https://www.eku.edu/" target="_blank">Eastern Kentucky University</a>. My <strong>long-term goal</strong> is to collaborate with organizations in the tech and social media sectors, such as <a href="https://bsky.app/" target="_blank">Bluesky</a>, <a href="https://mastodon.social/explore" target="_blank">Mastodon</a>, <a href="https://www.google.com/" target="_blank">Google</a>, or <a href="https://gradle.com/" target="_blank">Gradle</a>, and contribute to the development of decentralized social media platforms. I’m also open to opportunities at <a href="https://x.com" target="_blank">X</a>, where I can combine my passion for technology and political science to drive meaningful change in the world.</p>
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <p>👋 <strong>Hello</strong>, I'm <strong>Jerry Lockard</strong> – a passionate coder, political science student, and aspiring politician based in <em>Lexington, KY</em>. Currently, I'm balancing my role as a substitute teacher for FCPS while pursuing a Bachelor's degree in Political Science at <a href="https://www.eku.edu/" target="_blank">Eastern Kentucky University</a>.</p>
+                    <p>My journey in tech is driven by a vision to bridge the gap between technology and social change. I'm particularly interested in the potential of decentralized social media platforms to reshape online interactions and promote digital democracy.</p>
+                    <p>My <strong>long-term goal</strong> is to collaborate with innovative organizations in the tech and social media sectors, such as <a href="https://bsky.app/" target="_blank">Bluesky</a>, <a href="https://mastodon.social/explore" target="_blank">Mastodon</a>, <a href="https://www.google.com/" target="_blank">Google</a>, or <a href="https://gradle.com/" target="_blank">Gradle</a>. I'm also open to opportunities at <a href="https://x.com" target="_blank">X</a>, where I can leverage my unique blend of technical skills and political science knowledge to drive meaningful change in the digital landscape.</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -165,10 +200,12 @@
         <div class="container">
             <h2>Personal Life</h2>
             <div class="row">
-                <div class="col-md-6 offset-md-3">
+                <div class="col-md-8 offset-md-2">
                     <ul>
-                        <li>🏳️‍🌈 <strong>LGBTQ+ Advocate</strong> and happily married to my wonderful husband. We've been together for <strong>12 years</strong> and married for <strong>8 years</strong>.</li>
-                        <li>🐰 <strong>Proud owner</strong> of two playful rabbits, Larry and Chuck, who bring joy and laughter to my life.</li>
+                        <li>🏳️‍🌈 <strong>LGBTQ+ Advocate</strong> and proudly married to my wonderful husband. We've been together for <strong>12 years</strong> and married for <strong>8 years</strong>, growing stronger with each passing day.</li>
+                        <li>🐰 <strong>Proud owner</strong> of two adorable rabbits, Larry and Chuck. They're not just pets; they're family members who bring endless joy and laughter to our home.</li>
+                        <li>📚 <strong>Lifelong learner</strong> with a passion for both technology and political science. I believe in the power of interdisciplinary knowledge to solve complex societal issues.</li>
+                        <li>🌱 <strong>Environmental enthusiast</strong>, always looking for ways to reduce my carbon footprint and promote sustainable living practices.</li>
                         <li>😄 <strong>Pronouns</strong>: he/him/his</li>
                     </ul>
                 </div>
@@ -181,9 +218,25 @@
         <div class="container">
             <h2>Coding and Projects</h2>
             <div class="row">
+                <div class="col-md-6">
+                    <div class="project-card">
+                        <h3>Nottyboi</h3>
+                        <p>A decentralized social media platform tailored for gay men over 18+. This project aims to create a secure and welcoming environment for connection and expression within the LGBTQ+ community.</p>
+                        <p><strong>Technologies:</strong> Flutter, Dart, Firebase</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="project-card">
+                        <h3>Political Data Analyzer</h3>
+                        <p>A web application that visualizes political trends and voting patterns using public data. This project combines my interests in political science and data analysis.</p>
+                        <p><strong>Technologies:</strong> React, D3.js, Python</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
                 <div class="col-md-8 offset-md-2">
-                    <p>My journey into coding began during the COVID-19 lockdown, where I discovered a profound interest in technology. Though I’m still in the learning phase, my enthusiasm for coding and understanding the intricacies of technology continues to grow. I dedicate much of my free time to designing apps and websites, primarily using Flutter and Dart, with recent explorations into <a href="https://reactnative.dev/" target="_blank">React Native</a>.</p>
-                    <p>Currently, I’m focused on developing <strong>Nottyboi</strong>, a decentralized social media platform tailored for gay men over 18+. This platform is designed to offer a secure and welcoming environment for connection and expression.</p>
+                    <p>My coding journey began during the COVID-19 lockdown, igniting a profound interest in technology. While I'm still in the learning phase, my enthusiasm for coding and understanding the intricacies of technology continues to grow exponentially. I dedicate much of my free time to designing apps and websites, primarily using Flutter and Dart, with recent explorations into <a href="https://reactnative.dev/" target="_blank">React Native</a>.</p>
+                    <p>I'm always eager to learn new technologies and contribute to open-source projects that align with my values and interests.</p>
                 </div>
             </div>
         </div>
@@ -193,7 +246,19 @@
     <section id="aspirations">
         <div class="container">
             <h2>Future Aspirations</h2>
-            <p>With <strong>Nottyboi</strong>, my vision is to build a vibrant and supportive community for gay men, where they can connect, share, and engage without compromising their privacy and security. Drawing from my background in political science, I aspire to use this platform to advocate for LGBTQ+ rights and drive positive social change.</p>
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <p>My vision for <strong>Nottyboi</strong> extends beyond creating just another social platform. I aim to build a vibrant and supportive community for gay men, where they can connect, share, and engage without compromising their privacy and security. This project is a testament to my belief in the power of technology to foster inclusivity and social progress.</p>
+                    <p>Drawing from my background in political science, I aspire to:</p>
+                    <ul>
+                        <li>Advocate for LGBTQ+ rights through technology-driven initiatives</li>
+                        <li>Contribute to the development of ethical AI and machine learning models that respect user privacy</li>
+                        <li>Bridge the gap between policymakers and technologists to create more informed digital policies</li>
+                        <li>Explore the potential of blockchain technology in enhancing democratic processes and transparency</li>
+                    </ul>
+                    <p>Ultimately, I envision a career that seamlessly blends my passion for coding, political science, and social advocacy, allowing me to make a lasting impact on both the digital and political landscapes.</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -201,9 +266,9 @@
     <section id="contact">
         <div class="container">
             <h2>Get in Touch</h2>
-            <p class="text-center">I’m always open to collaborations, discussions about technology, or conversations about political science and social change. Let’s work together to make the world a better place through technology and proactive initiatives!</p>
+            <p class="text-center">I'm always open to collaborations, discussions about technology, or conversations about political science and social change. Let's work together to make the world a better place through technology and proactive initiatives!</p>
             <div class="text-center">
-                <a href="mailto:jerry@lockard.me" class="btn btn-outline-dark">Email Me</a>
+                <a href="mailto:jerry@lockard.me" class="btn btn-primary contact-btn">Email Me</a>
             </div>
         </div>
     </section>
@@ -211,6 +276,11 @@
     <!-- Footer Section -->
     <footer class="footer">
         <div class="container">
+            <div class="social-icons">
+                <a href="https://github.com/yourgithub" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/yourlinkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/yourtwitter" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
             <p>&copy; 2024 Jerry Lockard. All Rights Reserved.</p>
         </div>
     </footer>
