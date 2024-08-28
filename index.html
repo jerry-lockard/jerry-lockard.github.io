@@ -1,151 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Developer Profile</title>
+    <title>Developer Profile - @Lexington-KY-40507</title>
+    
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    
+    <!-- Custom CSS for additional styling -->
     <style>
         body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
             padding-top: 56px;
         }
-        .bg-light-custom {
-            background-color: #f8f9fa;
+
+        /* Styling for the main header */
+        .header-section {
+            background: #343a40;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
         }
+
+        .header-section h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+        }
+
+        .header-section p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        /* Profile image styling */
         .profile-img {
             width: 150px;
             border-radius: 50%;
+            margin-bottom: 20px;
+            border: 4px solid #fff;
         }
-        .card-custom {
-            margin: 20px 0;
+
+        /* About section */
+        #about {
+            padding: 60px 0;
         }
+
+        #about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        #about p {
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        /* Personal Life section */
+        #personal-life {
+            background: #f8f9fa;
+            padding: 60px 0;
+        }
+
+        #personal-life h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        /* Coding and Projects section */
+        #projects {
+            padding: 60px 0;
+        }
+
+        #projects h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        /* Future Aspirations section */
+        #aspirations {
+            background: #f8f9fa;
+            padding: 60px 0;
+        }
+
+        #aspirations h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        #aspirations p {
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        /* Contact section */
+        #contact {
+            padding: 60px 0;
+        }
+
+        #contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
         .footer {
+            background: #343a40;
+            color: white;
             padding: 20px 0;
             text-align: center;
         }
     </style>
 </head>
+
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <a class="navbar-brand" href="#">My Profile</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
+    <!-- Navbar Section -->
+    <!-- Fixed-top navbar that collapses on smaller screens -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Jerry Lockard</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#personal-life">Personal Life</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Coding & Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#aspirations">Future Aspirations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <!-- Header -->
-    <header class="jumbotron jumbotron-fluid bg-light-custom text-center">
-        <div class="container">
-            <img src="profile-picture.jpg" alt="Profile Picture" class="profile-img img-fluid">
-            <h1 class="display-4">Your Name</h1>
-            <p class="lead">Aspiring Developer | Web Enthusiast | Tech Lover</p>
+    <!-- Header Section -->
+    <!-- A jumbotron with a dark background, profile image, and introduction text -->
+    <header class="header-section">
+        <div class="container text-center">
+            <img src="profile-picture.jpg" alt="Profile Picture" class="profile-img">
+            <h1>Jerry Lockard</h1>
+            <p>Dedicated Coder | Political Science Student | Aspiring Politician</p>
         </div>
     </header>
 
     <!-- About Me Section -->
-    <section id="about" class="container">
-        <div class="row">
-            <div class="col-md-8 offset-md-2">
-                <h2 class="text-center">About Me</h2>
-                <p class="text-center">I'm a passionate developer with a love for coding and web development. I'm currently learning Bootstrap and building my developer portfolio to showcase my skills and projects. I enjoy solving problems and am constantly seeking to improve my knowledge in the field of technology.</p>
-            </div>
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>👋 <strong>Hello</strong>, I’m <strong>Jerry Lockard</strong> – a dedicated coder, political science student, and aspiring politician based in <em>Lexington, KY</em>. Currently, I’m working as a substitute teacher for FCPS and pursuing a Bachelor's degree in Political Science at <a href="https://www.eku.edu/" target="_blank">Eastern Kentucky University</a>. My <strong>long-term goal</strong> is to collaborate with organizations in the tech and social media sectors, such as <a href="https://bsky.app/" target="_blank">Bluesky</a>, <a href="https://mastodon.social/explore" target="_blank">Mastodon</a>, <a href="https://www.google.com/" target="_blank">Google</a>, or <a href="https://gradle.com/" target="_blank">Gradle</a>, and contribute to the development of decentralized social media platforms. I’m also open to opportunities at <a href="https://x.com" target="_blank">X</a>, where I can combine my passion for technology and political science to drive meaningful change in the world.</p>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="container">
-        <div class="row">
-            <div class="col-md-8 offset-md-2">
-                <h2 class="text-center">Skills</h2>
-                <div class="row">
-                    <div class="col-md-4">
-                        <h5>Frontend Development</h5>
-                        <ul class="list-unstyled">
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>Bootstrap</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <h5>Backend Development</h5>
-                        <ul class="list-unstyled">
-                            <li>Node.js</li>
-                            <li>Express.js</li>
-                            <li>MongoDB</li>
-                            <li>SQL</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <h5>Tools & Technologies</h5>
-                        <ul class="list-unstyled">
-                            <li>Git & GitHub</li>
-                            <li>Docker</li>
-                            <li>VS Code</li>
-                            <li>Linux</li>
-                        </ul>
-                    </div>
+    <!-- Personal Life Section -->
+    <section id="personal-life">
+        <div class="container">
+            <h2>Personal Life</h2>
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <ul>
+                        <li>🏳️‍🌈 <strong>LGBTQ+ Advocate</strong> and happily married to my wonderful husband. We've been together for <strong>12 years</strong> and married for <strong>8 years</strong>.</li>
+                        <li>🐰 <strong>Proud owner</strong> of two playful rabbits, Larry and Chuck, who bring joy and laughter to my life.</li>
+                        <li>😄 <strong>Pronouns</strong>: he/him/his</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="container">
-        <div class="row">
-            <div class="col-md-8 offset-md-2">
-                <h2 class="text-center">Projects</h2>
-                <div class="card card-custom">
-                    <div class="card-body">
-                        <h5 class="card-title">Project 1</h5>
-                        <p class="card-text">A brief description of your project. Explain what technologies you used and what challenges you overcame.</p>
-                        <a href="https://github.com/yourusername/project1" class="btn btn-primary" target="_blank">View on GitHub</a>
-                    </div>
-                </div>
-                <div class="card card-custom">
-                    <div class="card-body">
-                        <h5 class="card-title">Project 2</h5>
-                        <p class="card-text">A brief description of your project. Explain what technologies you used and what challenges you overcame.</p>
-                        <a href="https://github.com/yourusername/project2" class="btn btn-primary" target="_blank">View on GitHub</a>
-                    </div>
+    <!-- Coding and Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Coding and Projects</h2>
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <p>My journey into coding began during the COVID-19 lockdown, where I discovered a profound interest in technology. Though I’m still in the learning phase, my enthusiasm for coding and understanding the intricacies of technology continues to grow. I dedicate much of my free time to designing apps and websites, primarily using Flutter and Dart, with recent explorations into <a href="https://reactnative.dev/" target="_blank">React Native</a>.</p>
+                    <p>Currently, I’m focused on developing <strong>Nottyboi</strong>, a decentralized social media platform tailored for gay men over 18+. This platform is designed to offer a secure and welcoming environment for connection and expression.</p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Future Aspirations Section -->
+    <section id="aspirations">
+        <div class="container">
+            <h2>Future Aspirations</h2>
+            <p>With <strong>Nottyboi</strong>, my vision is to build a vibrant and supportive community for gay men, where they can connect, share, and engage without compromising their privacy and security. Drawing from my background in political science, I aspire to use this platform to advocate for LGBTQ+ rights and drive positive social change.</p>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="container">
-        <div class="row">
-            <div class="col-md-8 offset-md-2">
-                <h2 class="text-center">Contact Me</h2>
-                <p class="text-center">Feel free to reach out to me via email or connect with me on LinkedIn.</p>
-                <div class="text-center">
-                    <a href="mailto:your.email@example.com" class="btn btn-outline-dark">Email Me</a>
-                    <a href="https://www.linkedin.com/in/yourprofile" class="btn btn-outline-dark" target="_blank">LinkedIn</a>
-                </div>
+    <section id="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p class="text-center">I’m always open to collaborations, discussions about technology, or conversations about political science and social change. Let’s work together to make the world a better place through technology and proactive initiatives!</p>
+            <div class="text-center">
+                <a href="mailto:jerry@lockard.me" class="btn btn-outline-dark">Email Me</a>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer bg-light-custom">
+    <!-- Footer Section -->
+    <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+            <p>&copy; 2024 Jerry Lockard. All Rights Reserved.</p>
         </div>
     </footer>
 
+    <!-- jQuery and Bootstrap JS for interactive components -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
