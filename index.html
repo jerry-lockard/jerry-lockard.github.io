@@ -3,10 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jerry Lockard's Portfolio</title>
+    <title>Developer Profile</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            padding-top: 56px;
+        }
+        .bg-light-custom {
+            background-color: #f8f9fa;
+        }
+        .profile-img {
+            width: 150px;
+            border-radius: 50%;
+        }
+        .card-custom {
+            margin: 20px 0;
+        }
+        .footer {
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to Jerry Lockard's Developer Portfolio</h1>
-    <p>This is a placeholder page. My portfolio is under construction!</p>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">My Profile</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="jumbotron jumbotron-fluid bg-light-custom text-center">
+        <div class="container">
+            <img src="profile-picture.jpg" alt="Profile Picture" class="profile-img img-fluid">
+            <h1 class="display-4">Your Name</h1>
+            <p class="lead">Aspiring Developer | Web Enthusiast | Tech Lover</p>
+        </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about" class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h2 class="text-center">About Me</h2>
+                <p class="text-center">I'm a passionate developer with a love for coding and web development. I'm currently learning Bootstrap and building my developer portfolio to showcase my skills and projects. I enjoy solving problems and am constantly seeking to improve my knowledge in the field of technology.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h2 class="text-center">Skills</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h5>Frontend Development</h5>
+                        <ul class="list-unstyled">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Bootstrap</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Backend Development</h5>
+                        <ul class="list-unstyled">
+                            <li>Node.js</li>
+                            <li>Express.js</li>
+                            <li>MongoDB</li>
+                            <li>SQL</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Tools & Technologies</h5>
+                        <ul class="list-unstyled">
+                            <li>Git & GitHub</li>
+                            <li>Docker</li>
+                            <li>VS Code</li>
+                            <li>Linux</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h2 class="text-center">Projects</h2>
+                <div class="card card-custom">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 1</h5>
+                        <p class="card-text">A brief description of your project. Explain what technologies you used and what challenges you overcame.</p>
+                        <a href="https://github.com/yourusername/project1" class="btn btn-primary" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
+                <div class="card card-custom">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 2</h5>
+                        <p class="card-text">A brief description of your project. Explain what technologies you used and what challenges you overcame.</p>
+                        <a href="https://github.com/yourusername/project2" class="btn btn-primary" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h2 class="text-center">Contact Me</h2>
+                <p class="text-center">Feel free to reach out to me via email or connect with me on LinkedIn.</p>
+                <div class="text-center">
+                    <a href="mailto:your.email@example.com" class="btn btn-outline-dark">Email Me</a>
+                    <a href="https://www.linkedin.com/in/yourprofile" class="btn btn-outline-dark" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-light-custom">
+        <div class="container">
+            <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
